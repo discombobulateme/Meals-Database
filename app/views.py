@@ -19,11 +19,19 @@ def navCategories():
 
 
 @app.route('/categories/<categoriesID>')
-def randos(categoriesID):
+def categories(categoriesID):
     heading = "categories"
     subheading = "Many delicious meals"
     url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=%s" % categoriesID
     response = requests.request("GET", url)
     return render_template('categories.html', heading=heading, subheading=subheading, meal=response.json(),menu=navCategories())
 
+
+@app.route('/meal/<mealID>')
+def meals(mealID):
+    heading = "Meals"
+    subheading = "Accessing the Random User API"
+    url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=%s"%mealID
+    response = requests.request("GET", url)
+    return render_template('meal.html', heading=heading, subheading=subheading, food=response.json(),menu=navCategories())
 
