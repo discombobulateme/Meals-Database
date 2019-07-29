@@ -1,10 +1,10 @@
 # The Meals Databse
 
-This a student project is based on Flask, Bootstrap and [TheMealDB](https://www.themealdb.com/) api. The base code that is in the repo should be pretty self explaniatory at this stage :) 
+This a student project is based on Flask, Bootstrap and [TheMealDB](https://www.themealdb.com/) api. The base code that is in the repo should be pretty self explanatory at this stage :)
 
 
 
-### Clone the repository 
+### Clone the repository
 
 Take a copy of the code on to your own computer
 
@@ -28,28 +28,28 @@ git checkout -b feature-name
 
 
 ### Code your changes
-Write your code and test it locally. Once you are happy with the changes commit. 
+Write your code and test it locally. Once you are happy with the changes commit.
 
 
 
 
 ### Commit and push your branch
 ```
-git add . 
+git add .
 git commit -m "Some message about what you changed"
 git push
 ```
-The first time that you commit to your branch you are likely to hit an error as the git server doesn't know your branch exists. Read through the error you from git and it should give you some suggestions on how to solve this. 
+The first time that you commit to your branch you are likely to hit an error as the git server doesn't know your branch exists. Read through the error you from git and it should give you some suggestions on how to solve this.
 
 ### Merging the code
-This part is handled by the repository administrator. 
+This part is handled by the repository administrator.
 
 
 # API
 
-Documentation on the API can be found at [TheMealDB](https://www.themealdb.com/) 
+Documentation on the API can be found at [TheMealDB](https://www.themealdb.com/)
 
-### Categories 
+### Categories
 This gives you all the available categories
 (https://www.themealdb.com/api/json/v1/1/categories.php)
 
