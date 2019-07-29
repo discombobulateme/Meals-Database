@@ -20,7 +20,7 @@ def navCategories():
 
 @app.route('/categories/<categoriesID>')
 def categories(categoriesID):
-    heading = "categories"
+    heading = categoriesID
     subheading = "Many delicious meals"
     url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=%s" % categoriesID
     response = requests.request("GET", url)
@@ -34,4 +34,3 @@ def meals(mealID):
     url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=%s"%mealID
     response = requests.request("GET", url)
     return render_template('meal.html', heading=heading, subheading=subheading, food=response.json(),menu=navCategories())
-

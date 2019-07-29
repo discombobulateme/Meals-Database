@@ -10,7 +10,11 @@
   
   <div class="container">
     <div class="row">
-             
+      {% for category in menu.categories%}
+        <div class="col-md-3 p-2">
+          <a href="/categories/{{category.strCategory}}"> <img  class="img-fluid" src="{{category.strCategoryThumb}}">
+        </div>
+      {% endfor %}
      
     </div>  
   </div>
